@@ -1,6 +1,6 @@
 <script lang="ts">
+  //루트 레이아웃 컴포넌트
   import type { LayoutProps } from "./$types";
-
   let { data, children }: LayoutProps = $props();
 </script>
 
