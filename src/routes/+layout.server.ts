@@ -5,7 +5,6 @@ export const ssr = true;
 export const load: LayoutServerLoad = async ({ locals }) => {
   const session = await locals.auth();
   const stringUser = JSON.stringify(session?.user) || "";
-  console.log(session?.user);
   return {
     a: 1,
     desc: "a라는 값은 루트에서 내려주는 값",
